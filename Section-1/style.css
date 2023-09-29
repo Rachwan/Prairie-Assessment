@@ -1,0 +1,103 @@
+:root {
+    --blue-color: #5429FF;
+    --grey-light-color: #cbcce8;
+    --text-color: #667085;
+    --cyan-blue-color: #344054;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    font-size: 14px;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    width: 100wh;
+}
+.main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.main .image img {
+    max-width: 100%;
+    height: 900px;
+    border-radius: 30px;
+}
+.main__content {
+
+}
+.title__content {
+    margin-bottom: 30px;
+}
+.title__content h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.title__content p {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.email__field,
+.password__field {
+    display: flex;
+    flex-direction: column;
+}
+.email__field {
+    margin-bottom: 10px;
+}
+.email__field label,
+.password__field label {
+    font-size: 15px;
+    margin-bottom: 5px;
+    opacity: .9;
+}
+.email__input,
+.password__input {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: var(--grey-light-color) 1px solid;
+    outline: none;
+}
+.checker__field {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.remember__me label {
+    font-size: 14px;
+}
+.signIn__buttons {
+    display: flex;
+    flex-direction: column;
+}
+.signIn__buttons input:nth-child(1) {
+    background-color: var(--blue-color);
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+.signIn__buttons input[value]:nth-child(1) {
+    color: white;
+    font-size: 16px;
+
+}
+.signIn__buttons input:nth-child(2) {
+    background-color: white;
+    border: 1px solid var(--grey-light-color);
+    padding: 10px;
+}
+.signUp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
